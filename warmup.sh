@@ -20,7 +20,7 @@ function help(){
 # execute getopt
 ARGS=$(getopt -o "hvl:" -l "help,verbose,logfile:" -n "Varnish-Cache WarmUp" -- "$@");
 
-# and chek if bad arguments
+# and check if bad arguments
 if [ $? -ne 0 ];
 then
     help;
